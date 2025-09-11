@@ -1,0 +1,207 @@
+<!--IN THE NAME OF GOD-->
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Design for Absolute Beginners</title>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Vazirmatn', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #4a90e2, #357ABD);
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffd700;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 2rem auto;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    section h2 {
+      color: #4a90e2;
+      margin-bottom: 1rem;
+      text-align: center;
+      font-size: 2rem;
+    }
+    .lessons {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.2rem;
+    }
+    .card {
+      border-radius: 12px;
+      padding: 1.5rem;
+      color: #fff;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+    }
+    .card::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.1);
+      opacity: 0;
+      transition: opacity 0.3s;
+      border-radius: 12px;
+    }
+    .card:hover::after {
+      opacity: 1;
+    }
+    .card a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+    .lesson1 { background: linear-gradient(135deg, #FF6B6B, #FF8787); }
+    .lesson2 { background: linear-gradient(135deg, #FF9F43, #FFC048); }
+    .lesson3 { background: linear-gradient(135deg, #1DD1A1, #55EFC4); }
+    .lesson4 { background: linear-gradient(135deg, #54a0ff, #74b9ff); }
+    .lesson5 { background: linear-gradient(135deg, #f368e0, #ff6bcb); }
+    .lesson6 { background: linear-gradient(135deg, #00d2d3, #48dbfb); }
+    .lesson7 { background: linear-gradient(135deg, #576574, #8395a7); }
+    .lesson8 { background: linear-gradient(135deg, #8395a7, #a4b0be); }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .projects .card {
+      background: #e9f0ff;
+      color: #333;
+    }
+    .projects .card a {
+      color: #357ABD;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: #ddd;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Web Design for Absolute Beginners</h1>
+  <p>دوره آموزش طراحی سایت مقدماتی با HTML و CSS</p>
+  <nav>
+    <a href="#lessons">درس‌ها</a>
+    <a href="#projects">پروژه‌ها</a>
+    <a href="#contact">تماس</a>
+  </nav>
+</header>
+
+<div class="container">
+  <section id="lessons">
+    <h2>درس‌ها</h2>
+    <div class="lessons">
+      <div class="card lesson1">
+        <h3><i class="fas fa-code"></i> درس ۱: مقدمات HTML</h3>
+        <p>آشنایی با تگ‌ها و ساختار صفحات وب.</p>
+        <a href="lessons/lesson1-html-basics.html">مشاهده درس</a>
+      </div>
+      <div class="card lesson2">
+        <h3><i class="fas fa-paint-brush"></i> درس ۲: CSS مقدماتی</h3>
+        <p>یادگیری رنگ‌ها، فونت‌ها و استایل‌دهی صفحات.</p>
+        <a href="lessons/lesson2-css-intro.html">مشاهده درس</a>
+      </div>
+      <div class="card lesson3">
+        <h3><i class="fas fa-image"></i> درس ۳: لینک‌ها و تصاویر</h3>
+        <p>اضافه کردن تصاویر، لینک‌ها و محتوای چند رسانه‌ای.</p>
+        <a href="lessons/lesson3-links-images.html">مشاهده درس</a>
+      </div>
+      <div class="card lesson4">
+        <h3><i class="fas fa-list"></i> درس ۴: لیست‌ها و جداول</h3>
+        <p>ایجاد لیست‌ها، جدول‌ها و ساختاردهی محتوا.</p>
+        <a href="lessons/lesson4-lists-tables.html">مشاهده درس</a>
+      </div>
+      <div class="card lesson5">
+        <h3><i class="fas fa-edit"></i> درس ۵: فرم‌ها</h3>
+        <p>ساخت فرم‌ها و عناصر ورودی.</p>
+        <a href="lessons/lesson5-forms.html">مشاهده درس</a>
+      </div>
+      <div class="card lesson6">
+        <h3><i class="fas fa-layer-group"></i> درس ۶: استایل‌های پیشرفته CSS</h3>
+        <p>Flexbox، Grid و استایل‌های پیچیده‌تر.</p>
+        <a href="lessons/lesson6-advanced-css.html">مشاهده درس</a>
+      </div>
+      <div class="card lesson7">
+        <h3><i class="fas fa-mobile-alt"></i> درس ۷: ریسپانسیو و طراحی موبایل</h3>
+        <p>طراحی سایت‌های واکنش‌گرا و موبایل فرندلی.</p>
+        <a href="lessons/lesson7-responsive.html">مشاهده درس</a>
+      </div>
+      <div class="card lesson8">
+        <h3><i class="fas fa-project-diagram"></i> درس ۸: پروژه نهایی</h3>
+        <p>ایجاد یک پروژه عملی جمع‌بندی همه درس‌ها.</p>
+        <a href="lessons/lesson8-final-project.html">مشاهده درس</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>پروژه‌ها</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>پورتفولیو شخصی</h3>
+        <p>ساخت یک وب‌سایت نمونه کار حرفه‌ای با HTML و CSS.</p>
+        <a href="projects/portfolio/index.html">مشاهده پروژه</a>
+      </div>
+      <div class="card">
+        <h3>صفحه لندینگ</h3>
+        <p>ایجاد یک صفحه لندینگ ساده و ریسپانسیو.</p>
+        <a href="projects/landing-page/index.html">مشاهده پروژه</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>تماس با من</h2>
+    <p>ایمیل: <a href="mailto:aliasgari1381.2@gmail.com">aliasgari1381.2@gmail.com</a></p>
+  <p>GitHub: <a href="https://github.com/ali1381asgari" target="_blank">github.com/ali1381asgari</a></p>
+  </section>
+</div>
+
+<footer>
+  <p>© 2025 - Web Design for Absolute Beginners</p>
+</footer>
+
+</body>
+</html>
