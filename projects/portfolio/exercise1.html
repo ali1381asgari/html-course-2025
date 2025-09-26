@@ -1,0 +1,183 @@
+<!-- 786 -->
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ریست اولیه */
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: 'Vazirmatn', sans-serif; line-height:1.6; color:#333; background:#f4f4f4; }
+
+    a { text-decoration:none; color:inherit; }
+
+    /* هدر */
+    header {
+      background: linear-gradient(135deg, #4a90e2, #357ABD);
+      color:white;
+      padding:1rem 2rem;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+    header h1 { font-size:1.8rem; }
+    nav a { margin:0 1rem; font-weight:bold; transition:0.3s; }
+    nav a:hover { color:#ffd700; }
+
+    /* بخش about */
+    #about {
+      padding:4rem 2rem;
+      text-align:center;
+      background:white;
+    }
+    .about-photo {
+      width:180px;
+      height:180px;
+      border-radius:50%;
+      overflow:hidden;
+      margin:0 auto 2rem;
+      box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    }
+    .about-photo img {
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+    .about-text {
+      max-width:700px;
+      margin:0 auto;
+      font-size:1rem;
+      color:#555;
+      line-height:1.8;
+      text-align:justify;
+    }
+
+    /* Portfolio */
+    .portfolio { padding:4rem 2rem; text-align:center; }
+    .portfolio h2 { margin-bottom:2rem; font-size:2rem; color:#4a90e2; }
+
+    .projects {
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:2rem;
+    }
+
+    .project-card {
+      background:white;
+      flex:1 1 250px;
+      max-width:300px;
+      border-radius:12px;
+      overflow:hidden;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+      transition:transform 0.3s, box-shadow 0.3s;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow:0 15px 25px rgba(0,0,0,0.2);
+    }
+
+    .project-card img { width:100%; display:block; }
+
+    .project-card h3 { margin:1rem 0 0.5rem; color:#333; }
+    .project-card p { padding:0 1rem 1rem; font-size:0.95rem; color:#555; }
+    .project-card a {
+      display:inline-block;
+      margin-bottom:1rem;
+      padding:0.5rem 1rem;
+      background:#4a90e2;
+      color:white;
+      border-radius:6px;
+      transition:0.3s;
+    }
+    .project-card a:hover { background:#357ABD; }
+
+    /* Contact */
+    #contact { padding:4rem 2rem; text-align:center; background:white; }
+    #contact a { color:#4a90e2; transition:0.3s; }
+    #contact a:hover { color:#357ABD; }
+
+    /* Footer */
+    footer {
+      background:#333;
+      color:white;
+      text-align:center;
+      padding:1.5rem;
+      margin-top:2rem;
+    }
+
+    /* ریسپانسیو */
+    @media(max-width:768px) {
+      .projects { flex-direction:column; align-items:center; }
+      .about-text { text-align:center; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>نمونه کارهای من</h1>
+  <nav>
+    <a href="#about">درباره من</a>
+    <a href="#projects">پروژه‌ها</a>
+    <a href="#contact">تماس</a>
+  </nav>
+</header>
+
+<!-- بخش About -->
+<section id="about">
+  <div class="about-photo">
+    <img src="https://source.unsplash.com/300x300/?person" alt="عکس من">
+  </div>
+  <div class="about-text">
+    <h2>درباره من</h2>
+    <p>
+      سلام! من یک طراح وب هستم که به ساخت سایت‌های مدرن و واکنش‌گرا علاقه‌مندم.
+      هدف من اینه که تجربه کاربری خوب و طراحی زیبا رو با هم ترکیب کنم.  
+      به ابزارهای جدید و یادگیری تکنولوژی‌های تازه همیشه علاقه دارم و دنبال پیشرفت مداوم هستم.
+    </p>
+  </div>
+</section>
+
+<!-- بخش پروژه‌ها -->
+<section id="projects" class="portfolio">
+  <h2>پروژه‌ها</h2>
+  <div class="projects">
+    <div class="project-card">
+      <img src="https://source.unsplash.com/400x300/?website" alt="پروژه ۱">
+      <h3>پروژه ۱</h3>
+      <p>توضیح کوتاه درباره پروژه اول.</p>
+      <a href="#">مشاهده پروژه</a>
+    </div>
+    <div class="project-card">
+      <img src="https://source.unsplash.com/400x300/?app" alt="پروژه ۲">
+      <h3>پروژه ۲</h3>
+      <p>توضیح کوتاه درباره پروژه دوم.</p>
+      <a href="#">مشاهده پروژه</a>
+    </div>
+    <div class="project-card">
+      <img src="https://source.unsplash.com/400x300/?design" alt="پروژه ۳">
+      <h3>پروژه ۳</h3>
+      <p>توضیح کوتاه درباره پروژه سوم.</p>
+      <a href="#">مشاهده پروژه</a>
+    </div>
+  </div>
+</section>
+
+<!-- بخش تماس -->
+<section id="contact">
+  <h2>تماس با من</h2>
+  <p>ایمیل: <a href="mailto:aliasgari1381.2@gmail.com">aliasgari1381.2@gmail.com</a></p>
+  <p>GitHub: <a href="https://github.com/ali1381asgari" target="_blank">github.com/ali1381asgari</a></p>
+</section>
+
+<footer>
+  <p>© 2025 Portfolio</p>
+</footer>
+
+</body>
+</html>
